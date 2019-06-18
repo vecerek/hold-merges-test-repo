@@ -1,9 +1,11 @@
 language: node_js
+node_js:
+  - "12.4.0"
 git:
   depth: 1
 cache:
   directories:
     - $HOME/.build-cache
 env:
-  - TASK="test"
+  - TASK="travis"
 script: yarn $TASK
