@@ -1,0 +1,9 @@
+language: node_js
+git:
+  depth: 1
+cache:
+  directories:
+    - $HOME/.build-cache
+env:
+  - TASK="test"
+script: yarn $TASK
